@@ -1,0 +1,661 @@
+:root {
+  --blue: #0066ff;
+
+  --black: #130f40;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+
+  color: white;
+  transition: all ease-in-out 0.2s;
+  background-color: #eee;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+/* Header */
+header {
+  color: white;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  font-size: 1.1em;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header .brand {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+header .brand-name {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+header i {
+  font-size: 1.2em;
+}
+
+#bars {
+  font-weight: 600;
+  font-size: 1.4em;
+  display: none;
+}
+
+.bars-active {
+  display: inline;
+}
+
+header nav a {
+  color: rgba(255, 255, 255, 0.829);
+  text-decoration: none;
+  margin-right: 25px;
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 3px;
+  left: 22%;
+  bottom: -5px;
+  transition: 0.2s;
+  border-radius: 15px;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header nav a:hover::after {
+  width: 60%;
+}
+
+/* Hero */
+section.hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(1, 1, 1, 0.5) 1%,
+      rgba(1, 1, 1, 0.5) 100%
+    ),
+    url(../img/home.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+section.hero .hero-content {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+section.hero .hero-content h2 {
+  font-size: 2.8em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+section.hero .hero-content h1 {
+  font-size: 3.7em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+section.hero .hero-content .text {
+  margin: auto;
+  width: 80%;
+}
+section.hero .hero-content .text p {
+  line-height: 1.5em;
+}
+
+section.hero .hero-content .hero-btns {
+  margin-top: 40px;
+}
+
+section.hero .hero-content .btn-hero {
+  text-align: center;
+  background-color: transparent;
+  border: 1px var(--blue) solid;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: ease-in-out 0.2s;
+}
+
+section.hero .hero-content .btn-hero:hover {
+  background-color: var(--blue);
+}
+
+/* profile */
+.profile {
+  margin: 30px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 12rem;
+}
+
+.profile h1 {
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline;
+  font-size: 1.8em;
+}
+
+.profile-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.profile .profile-content {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0;
+  gap: 20px;
+}
+.profile-content img {
+  width: 50%;
+  height: auto;
+}
+
+.profile-content .profile-dialog {
+  width: 40%;
+  text-align: start;
+  line-height: 1.4em;
+  font-size: 1.4em;
+}
+
+/* service */
+.service {
+  margin-top: 50px;
+  padding: 0 20px;
+  text-align: center;
+  color: var(--black);
+}
+
+.service h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  background-color: var(--blue);
+  color: white;
+  display: inline;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.service-cards {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.service-wrapper {
+  width: 20%;
+  height: auto;
+  padding: 10px 10px;
+  background-color: white;
+}
+
+.service-wrapper:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+}
+
+.service-card:hover {
+  cursor: pointer;
+}
+.card-kitchen {
+  background-image: url("../img/kitchen-pexels-falling4utah-1080721.jpg");
+}
+
+.card-living {
+  background-image: url("../img/living-pexels-fotoaibe-1571453.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-bedroom {
+  background-image: url(../img/bedroom-pexels-itsterrymag-2631746.jpg);
+}
+.card-bath {
+  background-image: url(../img/bath-pexels-christa-grover-977018-1910472.jpg);
+}
+
+.service-card .service-tittle {
+  margin-top: 11rem;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 10px;
+  color: var(--black);
+  padding: 10px 30px;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.service-card a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.service-card .service-tittle:hover {
+  background-color: var(--blue);
+}
+.service-card .service-tittle:hover a {
+  color: white;
+}
+
+/* contact */
+.contact {
+  color: var(--black);
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.contact-tittle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-tittle h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  background-color: var(--blue);
+  color: white;
+  display: inline;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+#form-contact {
+  width: 40%;
+}
+
+.input-contact {
+  width: 300px;
+  height: 30px;
+  margin: 10px 5px 0;
+  font-size: 1em;
+}
+
+#male {
+  margin: 10px 5px 0;
+}
+
+#female {
+  margin: 10px 5px 0;
+}
+#msg {
+  height: 80px;
+}
+.form-result {
+  width: 40%;
+}
+
+.error p {
+  display: block;
+}
+.submit {
+  margin-top: 10px;
+  font-size: 1em;
+  padding: 7px 15px;
+  border-radius: 10px;
+  display: block;
+  margin-left: 40%;
+  background-color: var(--blue);
+  color: white;
+  border: var(--black) 1px solid;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+.result-form {
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+  padding-left: 20px;
+}
+
+.result-form p {
+  margin: 10px 0;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  background-color: white;
+  color: var(--black);
+  padding: 2rem 5rem;
+}
+
+.footer h1 {
+  font-size: 1.5em;
+}
+
+.footer h1 i {
+  color: var(--blue);
+}
+
+.footer-profile {
+  width: 25%;
+}
+
+.footer-profile p {
+  font-size: 0.8em;
+}
+
+.footer-profile .social {
+  font-size: 1.2em;
+}
+
+.footer-profile p i {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #eee;
+}
+
+.footer-profile h1,
+p {
+  margin-bottom: 1rem;
+}
+
+.footer-contacts {
+  width: 25%;
+}
+
+.footer-contacts h1 {
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  width: 25%;
+}
+
+.footer-links {
+  margin-bottom: 5px;
+}
+
+.footer-links h1 {
+  margin-bottom: 1rem;
+}
+.footer-links a {
+  display: block;
+  color: var(--black);
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.footer-links a i {
+  color: var(--blue);
+}
+
+/* resposove */
+@media (max-width: 991px) {
+  body {
+    font-size: 80%;
+  }
+
+  .service-wrapper {
+    width: 40%;
+    height: auto;
+    padding: 10px 10px;
+    background-color: white;
+  }
+
+  .contact-content {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  #form-contact {
+    width: 40%;
+  }
+  .result-form {
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 876px) {
+  .service-card {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .profile-content .profile-dialog {
+    width: 40%;
+    text-align: start;
+    line-height: 1.4em;
+    font-size: 1.1em;
+  }
+
+  .contact-content {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  #form-contact {
+    width: 40%;
+  }
+  table {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+  .input-contact {
+    width: 100%;
+    height: 30px;
+    margin: 10px 5px 0;
+    font-size: 1em;
+  }
+
+  .submit {
+    margin-top: 10px;
+    font-size: 1em;
+    padding: 7px 15px;
+    border-radius: 10px;
+    display: block;
+    margin-left: 50%;
+    background-color: var(--blue);
+    color: white;
+    border: var(--black) 1px solid;
+  }
+
+  .result-form {
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    padding-left: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    background-color: white;
+    color: var(--black);
+    padding: 2rem 5rem;
+    font-size: 80%;
+  }
+}
+@media (max-width: 599px) {
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+  }
+  #bars {
+    display: block;
+    font-size: 1.5em;
+  }
+  header nav {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    top: 5rem;
+    left: 50rem;
+    height: 10rem;
+    width: 10rem;
+    font-size: 1.2em;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .nav-active {
+    left: 27rem;
+  }
+
+  header nav a {
+    color: var(--blue);
+    text-decoration: none;
+    margin-right: 25px;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 500;
+    display: block;
+  }
+
+  header nav a:hover {
+    color: var(--blue);
+  }
+
+  .profile .profile-content {
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .profile-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-content .profile-dialog {
+    width: 100%;
+    text-align: start;
+    line-height: 1.4em;
+    font-size: 1.4em;
+  }
+
+  .service {
+    margin-bottom: 8rem;
+  }
+
+  .service-wrapper {
+    width: 80%;
+    height: auto;
+    padding: 10px 10px;
+    background-color: white;
+  }
+
+  #form-contact {
+    width: 80%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    background-color: white;
+    color: var(--black);
+    padding: 2rem 5rem;
+    font-size: 60%;
+  }
+
+  .result-form {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    padding-left: 20px;
+  }
+}

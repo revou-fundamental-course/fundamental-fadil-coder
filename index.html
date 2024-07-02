@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Tugas Revou</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <i class="fa-solid fa-house-chimney"></i>
+        <div class="brand-name">RoomTask</div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#our-profile">Profile</a>
+        <a href="#service">Service</a>
+
+        <a href="#contact">Contact</a>
+      </nav>
+      <i class="fa-solid fa-bars" id="bars"></i>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2 id="user">Welcome</h2>
+        <h1>Create Your Dream Space</h1>
+
+        <div class="text">
+          <p>
+            Transform your home with our expert room design services. From
+            kitchens to living rooms, we bring your vision to life with style
+            and elegance.
+          </p>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#service" class="btn btn-hero">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- our profile -->
+    <div class="profile" id="our-profile">
+      <h1>Our Profile</h1>
+      <div class="profile-wrapper">
+        <div class="profile-content">
+          <img src="img/pexels-pixabay-271743.jpg" alt="" />
+          <div class="profile-dialog">
+            <p>
+              Welcome to RoomTas, where we transform spaces into beautiful,
+              functional works of art. With a passion for design and a
+              commitment to excellence, our team of expert interior designers
+              brings your vision to life, creating spaces that reflect your
+              unique style and personality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our profile -->
+
+    <!-- service -->
+    <section class="service" id="service">
+      <h1>Our Room Inspirations</h1>
+      <div class="service-cards">
+        <div class="service-wrapper">
+          <div class="service-card card-kitchen">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Kitchen</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-wrapper">
+          <div class="service-card card-bath">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Bath</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-wrapper">
+          <div class="service-card card-living">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Living</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-wrapper">
+          <div class="service-card card-bedroom">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Bedroom</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-cards">
+        <div class="service-wrapper">
+          <div class="service-card card-kitchen">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Kitchen</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-wrapper">
+          <div class="service-card card-bath">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Bath</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-wrapper">
+          <div class="service-card card-living">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Living</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="service-wrapper">
+          <div class="service-card card-bedroom">
+            <div class="service-tittle">
+              <a href="" class="service-btn"><h3>Bedroom</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end service -->
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="contact-tittle"><h1>Message Us</h1></div>
+
+      <div class="contact-content">
+        <!-- form -->
+        <form name="form-contact" id="form-contact" action="#">
+          <table>
+            <tr class="input">
+              <td>Name</td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="name"
+                  class="input-contact"
+                />
+              </td>
+            </tr>
+            <tr class="input">
+              <td>Birth Date</td>
+              <td>:</td>
+              <td>
+                <input
+                  type="date"
+                  name="birth_date"
+                  id="birth_date"
+                  placeholder="Birth"
+                  class="input-contact"
+                />
+              </td>
+            </tr>
+            <tr class="input">
+              <td>Gender</td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="gender" value="Male" id="male" />
+                <label>Male</label>
+                <input type="radio" name="gender" value="Female" id="female" />
+                <label>Female</label>
+              </td>
+            </tr>
+            <tr class="input">
+              <td>Message</td>
+              <td>:</td>
+              <td>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  placeholder="msg"
+                  class="input-contact"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <div class="error"></div>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <!-- end form -->
+
+        <!--  result form -->
+        <div class="result-form">
+          <p>Name: <span id="contactName"></span></p>
+          <p>Tanggal Lahir: <span id="contactBirth"></span></p>
+          <p>Jenis Kelamin: <span id="contactGender"></span></p>
+          <p>Pesan: <span id="contactMsg"></span></p>
+        </div>
+        <!-- end result form -->
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <div id="footer" class="footer">
+      <div class="footer-profile">
+        <h1><i class="fa-solid fa-house-chimney"></i> RoomTask</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          nemo maxime, officia praesentium.
+        </p>
+
+        <p class="social">
+          <i class="fa-brands fa-facebook"></i
+          ><i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i
+          ><i class="fa-brands fa-x-twitter"></i>
+        </p>
+      </div>
+
+      <div class="footer-contacts">
+        <h1>Fadil Hambali</h1>
+        <p><i class="fa-solid fa-phone"></i> 09292299292</p>
+        <p><i class="fa-solid fa-envelope"></i> fadilhambali25@gmail.com</p>
+        <p><i class="fa-solid fa-location-pin"></i> Makassar, Indonesia</p>
+      </div>
+      <div class="footer-links">
+        <h1>Usefull Links</h1>
+        <a href="#home"><i class="fa-solid fa-right-long"></i> Home</a>
+        <a href="#profile"><i class="fa-solid fa-right-long"></i> Profile</a>
+        <a href="#service"><i class="fa-solid fa-right-long"></i> Service</a>
+        <a href="#contact"><i class="fa-solid fa-right-long"></i> Contact</a>
+      </div>
+    </div>
+
+    <!-- end footer -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
