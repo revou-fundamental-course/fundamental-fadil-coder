@@ -129,7 +129,7 @@ section.hero .hero-content {
 }
 
 section.hero .hero-content h2 {
-  font-size: 2.8em;
+  font-size: 2.6em;
   margin-bottom: 4px;
   text-transform: uppercase;
 }
@@ -271,7 +271,7 @@ section.hero .hero-content .btn-hero:hover {
 }
 
 .card-living {
-  background-image: url("../img/living-beedroom_pexels-marywhitneyph-90317.jpg");
+  background-image: url("../img/living-pexels-chaitaastic-1918291\ \(2\).jpg");
   background-position: center;
   background-size: cover;
 }
@@ -626,6 +626,21 @@ p {
   header nav a:hover {
     color: var(--blue);
   }
+  section.hero .hero-content {
+    font-size: 80%;
+  }
+
+  /* section.hero .hero-content h2 {
+    font-size: 2.6em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  section.hero .hero-content h1 {
+    font-size: 3.7em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  } */
 
   .profile .profile-content {
     margin-top: 20px;
