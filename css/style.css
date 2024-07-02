@@ -64,10 +64,12 @@ header i {
   font-size: 1.2em;
 }
 
+#btn-bars {
+  display: none;
+}
 .bars {
   font-weight: 600;
   font-size: 1.4em;
-  display: none;
 }
 
 .bars-active {
@@ -577,10 +579,10 @@ p {
   #btn-bars {
     padding: 10px;
     font-size: 1.3em;
+    display: block;
   }
 
   .bars {
-    display: block;
   }
 
   header nav {
