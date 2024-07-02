@@ -1,6 +1,5 @@
 :root {
   --blue: #0066ff;
-
   --black: #130f40;
 }
 
@@ -268,20 +267,20 @@ section.hero .hero-content .btn-hero:hover {
   cursor: pointer;
 }
 .card-kitchen {
-  background-image: url("../img/kitchen-pexels-falling4utah-1080721.jpg");
+  background-image: url("../img/kitchen-pexels-falling4utah-1080721\ \(1\).jpg");
 }
 
 .card-living {
-  background-image: url("../img/living-pexels-fotoaibe-1571453.jpg");
+  background-image: url("../img/living-beedroom_pexels-marywhitneyph-90317.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .card-bedroom {
-  background-image: url(../img/bedroom-pexels-itsterrymag-2631746.jpg);
+  background-image: url("../img/beedroom_pexels-marywhitneyph-90317.jpg");
 }
 .card-bath {
-  background-image: url(../img/bath-pexels-christa-grover-977018-1910472.jpg);
+  background-image: url("../img/bathroom-pexels-christa-grover-977018-1910472\ \(1\).jpg");
 }
 
 .service-card .service-tittle {
