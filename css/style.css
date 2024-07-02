@@ -64,7 +64,7 @@ header i {
   font-size: 1.2em;
 }
 
-#bars {
+.bars {
   font-weight: 600;
   font-size: 1.4em;
   display: none;
@@ -217,6 +217,9 @@ section.hero .hero-content .btn-hero:hover {
   padding: 0 20px;
   text-align: center;
   color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service h1 {
@@ -236,6 +239,7 @@ section.hero .hero-content .btn-hero:hover {
   justify-content: center;
   margin: 30px 20px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .service-wrapper {
@@ -566,10 +570,19 @@ p {
     scroll-behavior: smooth;
     scroll-padding: 10rem;
   }
-  #bars {
-    display: block;
-    font-size: 1.5em;
+
+  header {
+    padding: 10px 30px;
   }
+  #btn-bars {
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  .bars {
+    display: block;
+  }
+
   header nav {
     position: absolute;
     background-color: white;
@@ -586,7 +599,7 @@ p {
   }
 
   .nav-active {
-    left: 27rem;
+    left: 70%;
   }
 
   header nav a {
@@ -657,5 +670,14 @@ p {
     border-radius: 10px;
     width: 80%;
     padding-left: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    background-color: white;
+    color: var(--black);
+    padding: 2rem 2rem;
   }
 }

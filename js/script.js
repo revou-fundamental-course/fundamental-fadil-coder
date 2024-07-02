@@ -7,11 +7,11 @@ function replaceName() {
   document.querySelector("#user").innerHTML += " " + userName;
 }
 
-// replaceName();
+replaceName();
 
 // active bars
 const nav = document.querySelector(".nav");
-document.querySelector("#bars").addEventListener("click", function () {
+document.querySelector("#btn-bars").addEventListener("click", function () {
   nav.classList.toggle("nav-active");
 });
 
